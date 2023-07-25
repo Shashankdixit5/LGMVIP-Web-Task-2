@@ -1,0 +1,102 @@
+body {
+    background-color: rgb(252, 99, 5);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    position: center;
+    height: 50vh;
+  }
+  
+  .navbar {
+    background-color: hwb(0 50% 50%);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .brand {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .get-users-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 0px;
+    margin-right: 50px;
+  }
+  
+  .get-users-btn:hover {
+    background-color: red;
+    animation: vibration 3s infinite;
+  }
+  
+  @keyframes vibration {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+  }
+  
+  .user-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  
+  .user-card {
+    background-color: #03b8f5;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    box-sizing: border-box;
+  }
+  
+  .user-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Modifications to make each employee card a perfect square */
+  
+  .user-card {
+    width: 250px;
+    height: 250px; /* Set a fixed height to make each card a perfect square */
+  }
+  
